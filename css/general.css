@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff8f2;
+    color: #333;
+}
+
+p {
+    color: #333;
+}
+
+.hero {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?&w=800') 
+        center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    background-attachment: fixed;
+}
+
+.hero-name {
+    font-size: 30px;
+    font-weight: 700;
+     color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.about-section {
+    background-color: #fef5eb;
+    padding: 80px 8%;
+    text-align: center;
+}
+.about-section h3 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.about-section p {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 20px auto;   
+    color: #333;
+}
+
+.about-us {
+    font-size: 36px;
+    padding: 40px 5%;
+    text-align: center;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 30px 5%;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer p {
+    color: white;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 900;
+}
+
+.product-modal {
+  position: fixed;
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  opacity: 0;
+  width: min(90%, 420px);
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.product-modal img {
+  width: 70%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.product-modal h2 {
+  margin-bottom: 8px;
+}
+
+.product-modal span {
+  display: block;
+  margin-top: 12px;
+  font-weight: 700;
+  color: #e96b10;
+}
+
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.overlay.active,
+.product-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.product-modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.buy-btn {
+  margin-top: 20px;
+  padding: 12px 110px;
+  background-color: #e96b10;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, 0.2s ease;
+}
+
+.buy-btn:hover {
+  background-color: #c85b0e;
+  transform: translateY(-2px);
+}
+
+.buy-btn:active {
+    background-color: #9b480c;
+}

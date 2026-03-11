@@ -1,0 +1,126 @@
+.featured, .featured-canada-sweets, .featured-others-sweets {
+    padding: 60px 8%;
+    text-align: center; 
+}
+
+.featured-canada-sweets {
+    background: linear-gradient(to bottom right, #ffe5d9, #ffd6a5); 
+     position: relative;
+    padding: 80px 8%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+.featured-canada-sweets::before {
+    content: '🍁🍁🍁';
+    position: absolute;
+    font-size: 150px;
+    top: 20px;
+    left: 20px;
+    opacity: 0.15;
+    transform: rotate(-15deg);
+}
+
+/* targetting coffee's(or sweets/desserts) title and Featured's texts by section at the same time */
+.featured h3, .featured-canada-sweets h3, .featured-others-sweets h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.coffee-grid, .sweet-grid, .others-sweets-grid {     
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 115px;
+    justify-items: center;
+}
+
+.coffee-item, .sweet-item, .other-sweet-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background: rgb(230, 180, 124);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sweet-item {
+    padding: 30px;
+}
+
+.coffee-item:hover, .sweet-item:hover, .other-sweet-item:hover {
+    background: rgba(230, 180, 124, 0.9);
+     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.sweet-item:hover {
+    background: rgba(230, 180, 124, 0.4);
+}
+
+.coffee-item img, .sweet-item img, .other-sweet-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* targetting just from coffes/sweets/desserts  */
+.coffee-item h3, .sweet-item h3, .other-sweet-item h3 {
+    margin-bottom: 10px;
+}
+
+/* targeting shortDescription/first description's visible */
+.coffee-item p, .sweet-item p, .other-sweet-item p {
+    font-weight: 650;
+    color: #333;
+    font-size: 14px;
+}
+
+.product-price {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.featured-canada-sweets .product-price {
+   color: rgba(0, 0, 0, 0.712);
+}
+
+/* Modal styles */
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+#modalProduct {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modalImage {
+     width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
