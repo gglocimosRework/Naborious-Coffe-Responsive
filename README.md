@@ -5,11 +5,11 @@ on the Site*
 *This project is a work-in-progress and will be updated with new features*
 
 ## Technologies(languages) Used: 
--JavaScript
+*JavaScript*
 
--CSS
+ *CSS*
 
--HTML
+ *HTML*
 
 ### Future updates
 
