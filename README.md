@@ -1,4 +1,6 @@
-# Naborious Coffee(but with big changes) 
+# Naborious Coffee(but with big changes)
+
+#### The Prices or others elements may have been changed purposelly
 
 *A website of a fictional restaurant created with Javascript as the main language, generating all the products and section we can see
 on the Site*
