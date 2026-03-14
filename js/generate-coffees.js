@@ -16,7 +16,7 @@ function createSection(id, title, containerClass, sectionClass) {
 
     const container = document.createElement("div");
     container.classList.add(containerClass);
-    container.id = id + "Container"; // ex: coffeeContainer, sweetContainer
+    container.id = id + "Container"; // coffeeContainer, sweetContainer, otherSweetsContainer
 
     section.appendChild(h3);
     section.appendChild(container);
@@ -54,7 +54,7 @@ Object.values(sections).forEach(section => main.appendChild(section.section));
     card.innerHTML = `
     <img src="${product.image}" alt="${product.title}" loading="lazy" decoding="async">
     <h3>${product.title}</h3>
-    <p>${product.shortDescription}</p>
+    <p class="product-short-description">${product.shortDescription}</p>
     <span class="product-price">${product.price}</span>`;
 
     openProductModal(card, product);
